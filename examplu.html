@@ -7,14 +7,36 @@
     <title>(Red)Panda Panda Panda</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-   </head>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  </head>
   <body>
-    <div class="background-image" style="width: 100vw; height: 100vh ; overflow: hidden">
-      <img src="images/banner.jpg" alt="panda-banner" style="width: 100vw ; height: 100vh ; -webkit-filter: blur(5px) ; position: absolute" />
-      <h1 style="position: absolute ; top: 40% ; left: 39%">Red Pandas.</h1>
-      <h3 style="position: absolute ; top: 50% ; left: 38%">They're so awesome.</h3>
-      <a href="https://en.wikipedia.org/wiki/Red_panda?oldformat=true" style="position: absolute ; top: 59% ; left: 45.5%" class="button">Learn More</a>
+    <div class="background-image" style="width: 100%; height: 100% ; overflow: hidden ; display: inline-flex">
+      <img src="images/banner.jpg" alt="panda-banner" style="width: 100% ; height: 100% ; -webkit-filter: blur(5px) ; position: absolute; z-index: -100" />
+      <div class="inner" style="text-align: center ; display: flex ; margin: auto ; display: block ">
+        <i class="fa fa-paw fa-5x" style="z-index: 100" aria-hidden="true"></i>
+        <h1>Red Pandas.</h1>
+        <h3>They're so awesome.</h3>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Red_panda?oldformat=true" class="button">Learn More</a>
+        </div>
     </div>
-</div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      function writeTo() 
+      {
+      var fso, f, r;
+      var ForReading = 1, ForWriting = 2;
+      fso = new ActiveXObject("Scripting.FileSystemObject");
+      f = fso.OpenTextFile("comments.html", ForWriting, true);
+      f.write("<h3>"+ name + "</h3>")
+      f.Write("<p>" + userInfo + "</p>");
+      f.Close();
+      }
+    </script>
   </body>
 </html>
