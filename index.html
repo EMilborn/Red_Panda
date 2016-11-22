@@ -4,163 +4,95 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>(Red)Panda Panda Panda</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
+    <script type="text/javascript">
+    var goodclicks = 0;
+    function onClickGood() {
+        goodclicks += 1;
+        document.getElementById("goodpandactr").innerHTML = goodclicks;
+    };
+    </script>
+    <script>
+      var Badclicks = 0;
+      function onClickBad() {
+      Badclicks += 1;
+      document.getElementById("badpandactr").innerHTML = Badclicks;
+      };
+    </script>
+    
+    <div style="width: 100%; height: 100% ; overflow: hidden ; display: inline-flex">
+      <img src="images/banner.jpg" alt="panda-banner" style="width: 100% ; height: 100% ; -webkit-filter: blur(5px) ; position: absolute; z-index: -100 ;  background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;" />
+      <div class="inner" style="text-align: center ; display: flex ; margin: auto ; display: block ">
+        <i class="fa fa-paw fa-5x" style="z-index: 100" aria-hidden="true"></i>
+        <h1>Red Pandas.</h1>
+        <h3>They're so awesome.</h3>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Red_panda?oldformat=true" class="button">Learn More</a>
       </div>
     </div>
-
+    <h2 style="text-align: center ; margin-top: 25px; margin-bottom: 30px; border-bottom: 2px solid black ; width: 27.5% ; margin-left: 36.5%"> Red Panda Gallery </h2>
+    
+    <div class="large-12 columns" style="padding-bottom: 50px">
+      <div class="primary" style="text-align: center">
+        <img src="http://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7pS2VP2wnKyN8wxywmXtY0-FwsgxpiuVPF2kd2gauod5vncu3bsR2Hwd3PoR_couaDJflqJ8ilPLvEwGEWS4auvCLF7wanEatUEIziGDpUO3QarK0LuWui4kHIuTZTcOYBaT6WaU1ZsAnsDfcQ43L-IA-GfTXlGKzfgRfoaWo0ZpfeYYnPSbQvxUosOj64GBdg_H/" />
+      </div>
+    </div>
+    
     <div class="row">
-      <div class="large-12 columns">
-        <div class="callout">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>
-          </div>
+      <div class="large-6 medium-6 columns">
+        <div class="primary">
+          <img src="https://i.ytimg.com/vi/b6dT4kyVUuY/maxresdefault.jpg" />
+        </div>
+      </div>
+      <div class="large-6 medium-6 columns">
+        <div class="primary">
+          <img src="https://www.kullabs.com/uploads/redpanda11.jpg" />
         </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="primary callout">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
+    
+    <div class="row" style="padding-top: 50px ; padding-bottom: 50px">
+      <div class="large-4 medium-4 small-4 columns">
+        <div class="primary">
+          <img src="http://illuzone.net/wp-content/uploads/2015/01/Red-Panda-7.jpg" />
         </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-
-        <hr />
-
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="input-group">
-                  <input type="text" placeholder="small-9.columns" class="input-group-field" />
-                  <span class="input-group-label">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
       </div>
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="button">Simple Button</a><br/>
-        <a href="#" class="success button">Success Btn</a><br/>
-        <a href="#" class="alert button">Alert Btn</a><br/>
-        <a href="#" class="secondary button">Secondary Btn</a></p>
-        <div class="callout">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
+      <div class="large-4 medium-4 small-4 columns">
+        <div class="primary">
+          <img src="http://assets.worldwildlife.org/photos/806/images/hero_small/SCR_47384.jpg?1345530917" />
+        </div>
+      </div>
+      <div class="large-4 medium-4 small-4 columns">
+        <div class="primary">
+          <img src="http://jointhepanda.com/wp-content/uploads/red-panda-liegend-500x4001.jpg" />
         </div>
       </div>
     </div>
 
+    <hr>
+    
+    <div style="text-align: center">
+      <h2> Panda Counter </h2>
+      <A id="counter">
+      <a href="#counter" onclick="onClickGood()" class="success button">Click Here if you Love Red Pandas</a>
+      <br>
+      <a href="#counter" onclick="onClickBad()" class="alert button">Click Here if you Don't</a>
+    </div>
+
+    <br>
+
+    <div style="text-align: center">
+      <span>People who like Red Pandas: </span><span id="goodpandactr" style="font-size: 72px ; color: rgb(58, 219, 118)">0</span>
+      <br>
+      <span>People you shouldn't talk to: </span><span id="badpandactr" style="font-size: 72px ; color: rgb(222, 58, 31)">0</span>
+    </div>
+    
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
